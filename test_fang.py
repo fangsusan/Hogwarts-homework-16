@@ -27,7 +27,7 @@ class TestFang(object):
         print("======用例1，前置用例执行=====")
 
     def test_two(self):
-        print("======用例2，第一个执行=====")
+        print("======用例2，第一个执行=====")å
 
     # @pytest.fixture()
     def test_three(self):
@@ -35,11 +35,6 @@ class TestFang(object):
 
     def test_four(self):
         print("======用例4，执行=====")
-
-
-        ''''
-        hello  测试用
-        '''
 
 
 
