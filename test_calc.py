@@ -22,7 +22,7 @@ class Test_Calc:
     def test_sub(self,a,b,expect):
         assert self.calc.sub(a,b) == expect
 
-    # 减法测试用例特例 保留以为小数
+    # 减法测试用例特例 保留两位小数
     @pytest.mark.parametrize("a,b,expect",[(-4, -1, -3), (0.8, 0.5, 0.3)])
     def test_sub(self, a, b, expect):
         expect1 = self.calc.sub(a,b)
