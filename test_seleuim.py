@@ -6,22 +6,7 @@ from selenium import webdriver
 
 
 class Test_Weixin:
-    # 使用序列化cookie的方法进行登录
-    # 获取cookie，序列化后存入yaml文件内
-    # def test_get_cookie(self):
-    #     opt = webdriver.ChromeOptions()
-    #   # 设置debug地址
-    #     opt.debugger_address = "127.0.0.1:9222"
-    #       # 开启debug地址
-    #     driver = webdriver.Chrome(options=opt)
-    #     driver.implicitly_wait(5)
-    #       # 先打开目标网站，企业微信的扫码登录的页面
-    #     driver.get("https://work.weixin.qq.com/wework_admin/loginpage_wx?")
-    #     # driver.find_element_by_id("menu_contacts").click()
-    #     cookie = driver.get_cookies()
-    #     print(cookie)
-    #     with open("cookie_data.yaml","w",encoding="UTF-8") as f:
-    #         yaml.dump(cookie,f)
+
     def setup(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(5)
